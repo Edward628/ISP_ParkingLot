@@ -12,7 +12,7 @@
                                              aria-current="page" href="${pageContext.request.contextPath}/about.jsp">About</a> </li>
                     <li class="nav-item"> <a class="nav-link active" ${pageContext.request.requestURI.substring(pageContext.request.requestURI.
                             lastIndexOf("/")) eq '/cars.jsp' ? ' active' : ''}
-                                             aria-current="page" href="${pageContext.request.contextPath}/cars.jsp">Cars</a> </li>
+                                             aria-current="page" href="${pageContext.request.contextPath}/Cars">Cars</a> </li>
                     <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li>
                     <li class="nav-item"> <a class="nav-link disabled" aria-disabled="true">Disabled</a> </li>
                 </ul> <
