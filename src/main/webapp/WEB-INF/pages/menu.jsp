@@ -7,20 +7,25 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item"> <a class="nav-link active" ${pageContext.request.requestURI.substring(pageContext.request.requestURI.
-                            lastIndexOf("/")) eq '/about.jsp' ? ' active' : ''}
-                                             aria-current="page" href="${pageContext.request.contextPath}/about.jsp">About</a> </li>
-                    <li class="nav-item"> <a class="nav-link active" ${pageContext.request.requestURI.substring(pageContext.request.requestURI.
-                            lastIndexOf("/")) eq '/cars.jsp' ? ' active' : ''}
-                                             aria-current="page" href="${pageContext.request.contextPath}/Cars">Cars</a> </li>
+                    <li class="nav-item">
+                        <a class="nav-link ${pageContext.request.requestURI.substring(pageContext.request.requestURI.lastIndexOf("/")) eq '/about.jsp' ? 'active' : ''}"
+                           href="${pageContext.request.contextPath}/about.jsp">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ${pageContext.request.requestURI.substring(pageContext.request.requestURI.lastIndexOf("/")) eq '/cars.jsp' ? 'active' : ''}"
+                           href="${pageContext.request.contextPath}/Cars">Cars</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ${pageContext.request.requestURI.substring(pageContext.request.requestURI.lastIndexOf("/")) eq '/users.jsp' ? 'active' : ''}"
+                           href="${pageContext.request.contextPath}/Users">Users</a>
+                    </li>
                     <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li>
                     <li class="nav-item"> <a class="nav-link disabled" aria-disabled="true">Disabled</a> </li>
-                </ul> <
+                </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="${pageContext.request.contextPath}/Login">Login</a>
                     </li>
-
                 </ul>
             </div>
         </div>
